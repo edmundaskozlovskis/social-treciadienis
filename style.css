@@ -230,6 +230,7 @@ body {
     font-size: 16px;
     opacity: 0.6;
     margin: 10px 0;
+
 }
 .middle-column .editable-content p {
     line-height: 1.5;
@@ -249,6 +250,83 @@ body {
 .middle-column button:hover {
     color: #000000;
     background-color: #cccccc;
+}
+.middle-column .card-top,
+.middle-column .card-top div {
+    display: flex;
+    align-items: center;
+}
+.middle-column .card-top {
+    justify-content: space-between;
+}
+.middle-column .card-top div {
+    gap: 20px;
+}
+.middle-column .card-top div img {
+    border-radius: 50%;
+}
+.middle-column .card-top div h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.middle-column .card-top span {
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.middle-column .block-img-2col{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.middle-column .block-img-2col img {
+    width: 100%;
+}
+.last-column {
+    text-align: center;
+}
+.last-column .upcoming-events-block button {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px 16px;
+    background-color: #dfe5e8;
+    line-height: 1.5;
+}
+.last-column .upcoming-events-block button:hover {
+    background-color: #cccccc;
+}
+.last-column .friend-request img {
+    display: block;
+    margin: 0 auto;
+}
+.last-column .friend-request-btn-group {
+    display: flex;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+.last-column .friend-request-btn-group button {
+    border: none;
+    width: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.last-column .friend-request-btn-group button:first-child {
+    background-color: #4CAF50;
+}
+.last-column .friend-request-btn-group button:last-child {
+    background-color: #f44336;
+}
+.last-column .friend-request-btn-group button:hover {
+    background-color: #cccccc;
+}
+.last-column .w3-xxlarge {
+    font-size: 36px;
 }
 hr {
     border: none;
@@ -292,5 +370,21 @@ hr {
     }
     .top-block .responsive .responsive-menu-block a:first-child:hover {
         background-color: #fff;
+    }
+    .row,
+    .middle-column .block-img-2col {
+        flex-direction: column;
+    }
+    .container .col,
+    .container .col:first-child,
+    .container .col:last-child {
+        width: 100%;
+    }
+    .last-column .friend-request-btn-group {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .last-column .friend-request-btn-group button {
+        width: 100%;
     }
 }
